@@ -7,8 +7,40 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <Style x:Key="ButtonStyle1" TargetType="Button">
+            <Setter Property="Background" Value="{ThemeResource ButtonBackground}"/>
+            <Setter Property="BackgroundSizing" Value="OuterBorderEdge"/>
+            <Setter Property="Foreground" Value="{ThemeResource ButtonForeground}"/>
+            <Setter Property="BorderBrush" Value="{ThemeResource ButtonBorderBrush}"/>
+            <Setter Property="BorderThickness" Value="{ThemeResource ButtonBorderThemeThickness}"/>
+            <Setter Property="Padding" Value="{StaticResource ButtonPadding}"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+            <Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}"/>
+            <Setter Property="UseSystemFocusVisuals" Value="{StaticResource UseSystemFocusVisuals}"/>
+            <Setter Property="FocusVisualMargin" Value="-3"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid Margin="0,3,0,-3">
+                            <Rectangle Height="56" Stroke="Black" Width="85" RenderTransformOrigin="0.5,0.5" RadiusX="3.925" RadiusY="3.925" StrokeThickness="0.4" Fill="#FFB7A899">
+                                <Rectangle.RenderTransform>
+                                    <CompositeTransform Rotation="0"/>
+                                </Rectangle.RenderTransform>
+                            </Rectangle>
+                            <ContentPresenter HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
 
     <Grid>
-
+        <Button x:Name="btn_Close" Content="X" Height="56" VerticalAlignment="Top" Width="85" FontSize="36" Padding="8,1,8,1" BorderBrush="Black" Margin="0,-7,0,0"/>
+        <Button Style="{StaticResource ButtonStyle1}" x:Name="btn_Shop" Content="X" Height="56" VerticalAlignment="Top" Width="85" FontSize="36" Padding="8,1,8,1" BorderBrush="Black" Margin="0,712,0,0"/>
     </Grid>
 </Page>
