@@ -32,5 +32,10 @@ namespace BlendTextGame
                 // Navigate back to sub.xaml page.
                 this.Frame.Navigate(typeof(Page2));
         }
+
+        private void btn_Item_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Page3));
+        }
     }
 }
