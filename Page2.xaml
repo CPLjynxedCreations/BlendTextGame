@@ -8,8 +8,13 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-      
-        
+    <Grid Background="#FF650505">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="241*"/>
+            <RowDefinition Height="527*"/>
+        </Grid.RowDefinitions>
+        <TextBlock TextWrapping="Wrap" Text="PAGE 2" FontSize="48" HorizontalAlignment="Center"/>
+
+
     </Grid>
 </Page>

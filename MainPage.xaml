@@ -231,7 +231,7 @@
         <Button Style="{StaticResource ButtonStyle1}" x:Name="btn_Shop" Content="Shop" Height="56" VerticalAlignment="Top" Width="85" FontSize="24" Padding="8,1,8,1" BorderBrush="Black" Margin="0,714,0,0"/>
         <Button Style="{StaticResource ButtonStyle1}" x:Name="btn_Bank" Content="Bank" Height="56" VerticalAlignment="Top" Width="85" FontSize="24" Padding="8,1,8,1" BorderBrush="Black" Margin="84,714,0,0"/>
         <Button Style="{StaticResource ButtonStyle1}" x:Name="btn_Jobs" Content="Jobs" Height="56" VerticalAlignment="Top" Width="85" FontSize="24" Padding="8,1,8,1" BorderBrush="Black" Margin="168,714,0,0"/>
-        <Button Style="{StaticResource ButtonStyle1}" x:Name="btn_Item" Content="Items" Height="56" VerticalAlignment="Top" Width="85" FontSize="24" Padding="8,1,8,1" BorderBrush="Black" Margin="252,714,0,0"/>
+        <Button Style="{StaticResource ButtonStyle1}" x:Name="btn_Item" Content="Items" Height="56" VerticalAlignment="Top" Width="85" FontSize="24" Padding="8,1,8,1" BorderBrush="Black" Margin="252,714,0,0" Click="btn_Item_Click"/>
         <Button Style="{StaticResource ButtonStyle2}" x:Name="btn_Profile" Content="Profile" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="24" Width="96" Padding="0,0,0,0" Margin="0,0,0,-4" Height="79" Click="btn_Profile_Click"/>
         <TextBox Style="{StaticResource TextBoxStyleSearch}" x:Name="txt_Box_Search" TextWrapping="Wrap" Width="200" Height="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-30,-3,0,3" PlaceholderText="Search" Padding="10,3,6,3"/>
         <TextBlock x:Name="lbl_Money" TextWrapping="Wrap" Text="Money:" Width="100" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,40,50,0" Padding="0,8,0,0" FontWeight="Bold"/>
